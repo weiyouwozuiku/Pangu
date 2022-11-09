@@ -10,12 +10,12 @@ import (
 )
 
 func main() {
-	user, err := user.Current()
+	u, err := user.Current()
 	if err != nil {
 		panic(err)
 	}
 	fmt.Printf("%s\nHello %s! This is the Pangu programming language!\n",
-		consts.Pangu, user.Username)
+		consts.Pangu, u.Username)
 	fmt.Printf("Feel free to type in commands\n")
 	repl.Start(os.Stdin, os.Stdout)
 }

@@ -3,10 +3,10 @@ package repl
 import (
 	"bufio"
 	"fmt"
+	"github.com/weiyouwozuiku/Pangu/lexer"
 	"io"
 
 	"github.com/weiyouwozuiku/Pangu/consts"
-	"github.com/weiyouwozuiku/Pangu/lexer"
 )
 
 func Start(in io.Reader, out io.Writer) {
